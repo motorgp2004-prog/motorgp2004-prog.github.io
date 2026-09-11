@@ -13,7 +13,7 @@ permalink: /downloads/
 
 ## 檔案列表
 
-- [下載 25083492.pdf](/assets/files/25083492.pdf)
+- HONEYWELL DCP700 [下載 25083492.pdf](/assets/files/25083492.pdf)
 - 範例：[下載範例 PDF](/assets/files/example.pdf)
   - 範例連結還沒有真的檔案，不用理它
 
