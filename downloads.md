@@ -18,3 +18,7 @@ permalink: /downloads/
   - 範例連結還沒有真的檔案，不用理它
 
 > 小提醒：網頁上傳單檔 25MB 以內，中文檔名容易壞連結，記得改英文。
+
+## 文章索引
+
+所有文章清單請看 [文章索引](https://motorgp2004-prog.github.io/articles/)。
