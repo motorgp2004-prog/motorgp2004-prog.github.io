@@ -15,7 +15,7 @@ permalink: /downloads/
 
 - HONEYWELL DCP700 溫控器手冊 [下載 honeywell-dcp700-manual.pdf]({{ "/assets/files/honeywell-dcp700-manual.pdf" | relative_url }})
 - AZBIL C7G 說明書 CP-SP-1402C-07 [下載 azbil-c7g-cp-sp-1402c-07.pdf]({{ "/assets/files/azbil-c7g-cp-sp-1402c-07.pdf" | relative_url }})
-- 妹妹寫真照（動物園夕陽場景，1.2MB）[下載 xiaoyun-zoo-20260911.png]({{ "/assets/images/xiaoyun-zoo-20260911.png" | relative_url }})
+- 妹妹寫真照（動物園夕陽場景）[下載壓縮版 JPG 約100KB]({{ "/assets/images/xiaoyun-zoo-20260911-small.jpg" | relative_url }})／[下載原圖 PNG 1.1MB]({{ "/assets/images/xiaoyun-zoo-20260911.png" | relative_url }})
 
 > 小提醒：網頁上傳單檔 25MB 以內，中文檔名容易壞連結，記得改英文。
 

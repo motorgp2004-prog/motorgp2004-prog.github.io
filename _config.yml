@@ -17,11 +17,9 @@ header_pages:
   - index.md
   - articles.md
   - categories.md
-  - tags.md
   - search.md
   - about.md
-  - portfolio.md
-  - downloads.md
+# 標籤、作品集、下載區不在導覽列，從文章總覽與各頁內連進入（手機版比較不擠）
 minima:
   skin: auto
   social_links:
