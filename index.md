@@ -7,7 +7,7 @@ title: 首頁
 
 ## 最新文章
 
-往下滑就可以看到所有文章，點標題進去看全文。完整清單請看 [文章索引]({{ "/articles/" | relative_url }})。
+往下滑就可以看到所有文章，點標題進去看全文。完整清單請看 [文章總覽]({{ "/articles/" | relative_url }})，也可以用 [分類索引]({{ "/categories/" | relative_url }})、[標籤索引]({{ "/tags/" | relative_url }}) 找文。
 
 ## 下載區
 

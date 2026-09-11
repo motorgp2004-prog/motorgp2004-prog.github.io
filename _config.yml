@@ -16,6 +16,8 @@ permalink: /:year/:month/:day/:title/
 header_pages:
   - index.md
   - articles.md
+  - categories.md
+  - tags.md
   - about.md
   - portfolio.md
   - downloads.md

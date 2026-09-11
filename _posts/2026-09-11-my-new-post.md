@@ -2,7 +2,7 @@
 layout: post
 title: "自己發文：後台流程打通了"
 date: 2026-09-11 09:00:00 +0800
-categories: 生活
+categories: [生活]
 tags: [站務, 教學]
 excerpt: "用後台發的第一篇測試文，確認從寫稿到首頁顯示的流程是通的。"
 ---
