@@ -16,3 +16,7 @@ permalink: /portfolio/
 - 先留空，之後在 GitHub 上按 Edit 就能加
 
 > 更新方式：跟寫文章一樣，直接改這個檔案即可。
+
+## 下載區
+
+需要下載檔案請去 [下載區](https://motorgp2004-prog.github.io/downloads/)。
