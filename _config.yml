@@ -45,3 +45,4 @@ defaults:
       type: posts
     values:
       image: /assets/images/og-default.jpg
+# Trigger rebuild
