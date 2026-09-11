@@ -15,6 +15,7 @@ header_pages:
   - index.md
   - about.md
   - portfolio.md
+  - downloads.md
 minima:
   skin: auto
   social_links:
