@@ -14,6 +14,7 @@ permalink: /downloads/
 ## 檔案列表
 
 - HONEYWELL DCP700 溫控器手冊 [下載 honeywell-dcp700-manual.pdf]({{ "/assets/files/honeywell-dcp700-manual.pdf" | relative_url }})
+- AZBIL C7G 說明書 CP-SP-1402C-07 [下載 azbil-c7g-cp-sp-1402c-07.pdf]({{ "/assets/files/azbil-c7g-cp-sp-1402c-07.pdf" | relative_url }})
 
 > 小提醒：網頁上傳單檔 25MB 以內，中文檔名容易壞連結，記得改英文。
 
