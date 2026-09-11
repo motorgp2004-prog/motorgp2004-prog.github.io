@@ -27,9 +27,11 @@
 
 - 左（網站名稱）：`title: 蝦米碗糕之家`
 - 中（信箱）：`email: motorgp2004@icloud.com`
-- 右（介紹）：`description: 紀錄生活大小事。`
-- 導覽列：`header_pages` 目前是 `index.md`、`about.md`、`portfolio.md`、`downloads.md`（`guide.md` 故意不放進去）
+- 右（介紹）：`description: 蝦米碗糕之家：紀錄生活大小事...`（2026-09-11 已加長到 50 字，SEO 用）
+- 導覽列：`header_pages` 目前是 `index.md`、`articles.md`、`about.md`、`portfolio.md`、`downloads.md`（`guide.md` 故意不放進去）
 - 文章網址：`permalink: /:year/:month/:day/:title/`，不會帶中文分類，乾淨好記
+- SEO：已加 `jekyll-seo-tag`，`twitter.card: summary`，`logo: /favicon.ico`，文章預設圖 `og-default.jpg`
+- 留言：`giscus:` 區，`enabled: false` 等拿到 repo-id / category-id 再開（Discussions 已開好）
 
 改完存檔等 1-2 分鐘，去 `Actions` 看部署跑完再重整（`Ctrl+F5`）。
 
@@ -63,9 +65,9 @@ categories: 生活
 ## 改頁面
 
 - 關於我：改 `about.md`
-- 作品集：改 `portfolio.md`，文章連結請貼完整網址（例如 `https://motorgp2004-prog.github.io/2026/09/11/welcome/`），不要只貼 `/2026/...`，不然在倉庫裡點會 404
+- 作品集：改 `portfolio.md`，站內連結請用 `{{ "/2026/09/11/welcome/" | relative_url }}` 這種寫法（換網域不會壞）
 - 下載區：改 `downloads.md`
-- 首頁、關於我、作品集內文都有下載區連結，改連結三個地方要一起改
+- 首頁、關於我、作品集內文都有下載區連結，寫法統一用 `relative_url`
 - 改法都是：打開檔案按鉛筆 Edit，改完 `Commit changes`
 
 ## 貼圖片（不能像 Word 直接 Ctrl+V）
@@ -76,10 +78,15 @@ categories: 生活
 
 ## 放 PDF 給人下載
 
-1. 去 `assets/files/` 上傳 PDF（英文檔名，25MB 以內）
-2. 去 `downloads.md` 的檔案列表加一行：`[想顯示的名字](/assets/files/檔名.pdf)`
+1. 小檔（<25MB）：去 `assets/files/` 按 `Add file` > `Upload files` 上傳（英文檔名）
+2. 大檔（25-100MB，例如 AZBIL C7G 41.6MB）：網頁傳不上去，要用本機 `git add` + `push`
+3. 去 `downloads.md` 的檔案列表加一行：`[想顯示的名字]({{ "/assets/files/檔名.pdf" | relative_url }})`
 
-限制：這裡只放公開要分享的檔案，不要當雲端硬碟用（全部公開、空間小、沒自動同步）。
+目前檔案：
+- `honeywell-dcp700-manual.pdf`（11.7MB）
+- `azbil-c7g-cp-sp-1402c-07.pdf`（41.6MB，2026-09-11 本機加入）
+
+限制：這裡只放公開要分享的檔案，不要當雲端硬碟用（全部公開、空間小、沒自動同步，大檔會拖慢 Pages 部署）。
 
 ## 看成品還是改東西？
 
@@ -98,17 +105,35 @@ categories: 生活
 
 ```
 my-blog/
-  _config.yml      網站設定（標題、信箱、介紹、導覽、sitemap）
+  _config.yml      網站設定（標題、信箱、介紹、導覽、seo-tag、giscus）
   index.md         首頁（乾淨版）
   about.md         關於我（乾淨版）
-  portfolio.md     作品集（乾淨版）
-  downloads.md     下載區
-  guide.md         站長手冊（不進導覽）
-  admin/index.html 後台入口（推 GitHub 網頁，prose.io 已標不穩）
-  assets/files/    可下載的 PDF（25083492.pdf 等）
-  assets/images/   文章圖片（sample.svg 等）
-  _posts/          所有文章
-    2026-09-11-welcome.md    歡迎文（乾淨版）
-    2026-09-11-my-new-post.md 站長自己發的第一篇
-    2026-09-11-image-demo.md  圖文範例
+  articles.md      文章索引（Liquid 自動列出）
+  portfolio.md     作品集
+  downloads.md     下載區（HONEYWELL + AZBIL C7G）
+  guide.md         站長手冊（不進導覽，sitemap: false + noindex）
+  admin/index.html 後台入口（noindex，推 GitHub 網頁，prose.io 已標不穩）
+  robots.txt       擋 /guide/ /admin/，指到 sitemap.xml
+  Gemfile          本機預覽用 github-pages
+  _layouts/post.html        文章版型（含留言區）
+  _includes/comments.html   Giscus（沒填 ID 前不輸出）
+  _includes/custom-head.html favicon + theme-color
+  favicon.ico      根目錄圖示
+  assets/files/    可下載的 PDF
+    honeywell-dcp700-manual.pdf
+    azbil-c7g-cp-sp-1402c-07.pdf
+  assets/images/   文章圖片 + 社群圖
+    sample.svg
+    apple-touch-icon.png
+    og-default.jpg
+  _posts/          所有文章（都有 tags + excerpt）
+    2026-09-11-welcome.md    歡迎文
+    2026-09-11-my-new-post.md 後台流程測試（已改標題）
+    2026-09-11-image-demo.md  圖文範例（分類：教學）
 ```
+
+## 更新紀錄
+
+- 2026-09-11 全站健檢：giscus 接線、seo-tag、robots、relative_url、PDF 改名、內容整理（a66effe）
+- 2026-09-11 新增 AZBIL C7G CP-SP-1402C-07 到下載區（0d0235b）
+- 2026-09-11 README 同步最新結構
