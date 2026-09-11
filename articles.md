@@ -8,6 +8,7 @@ permalink: /articles/
 
 ## 快速導航
 
+- [站內搜尋]({{ "/search/" | relative_url }})：打關鍵字最快
 - [分類索引]({{ "/categories/" | relative_url }})：依主題找文
 - [標籤索引]({{ "/tags/" | relative_url }})：依關鍵字找文
 - [下載區]({{ "/downloads/" | relative_url }})

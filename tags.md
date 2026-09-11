@@ -38,6 +38,7 @@ permalink: /tags/
 
 ## 相關索引
 
+- [站內搜尋]({{ "/search/" | relative_url }})
 - [文章總覽]({{ "/articles/" | relative_url }})
 - [分類索引]({{ "/categories/" | relative_url }})
 - [下載區]({{ "/downloads/" | relative_url }})

@@ -10,10 +10,13 @@ permalink: /about/
 - 目標：用這個部落格記錄成長，分享作品
 - 聯絡我：motorgp2004@icloud.com
 
+## 找文章
+
+- [站內搜尋]({{ "/search/" | relative_url }})
+- [文章總覽]({{ "/articles/" | relative_url }})
+- [分類索引]({{ "/categories/" | relative_url }})
+- [標籤索引]({{ "/tags/" | relative_url }})
+
 ## 下載區
 
 需要下載檔案請去 [下載區]({{ "/downloads/" | relative_url }})。
-
-## 文章索引
-
-所有文章清單請看 [文章索引]({{ "/articles/" | relative_url }})。

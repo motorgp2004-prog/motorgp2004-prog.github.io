@@ -18,6 +18,7 @@ header_pages:
   - articles.md
   - categories.md
   - tags.md
+  - search.md
   - about.md
   - portfolio.md
   - downloads.md

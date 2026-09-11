@@ -5,9 +5,14 @@ title: 首頁
 
 歡迎來到蝦米碗糕之家！這裡會分享生活、學習筆記和作品。
 
-![小芸（妹妹寫真照，動物園夕陽場景）](/assets/files/xiaoyun-zoo-20260911.png)
+![小芸（妹妹寫真照，動物園夕陽場景）]({{ "/assets/images/xiaoyun-zoo-20260911.png" | relative_url }})
 
 > 妹妹在夕陽下的微笑，是哥哥最珍貴的禮物。
+
+## 找文章
+
+- [站內搜尋]({{ "/search/" | relative_url }})：打關鍵字最快
+- [文章總覽]({{ "/articles/" | relative_url }})、[分類索引]({{ "/categories/" | relative_url }})、[標籤索引]({{ "/tags/" | relative_url }})
 
 ## 最新文章
 

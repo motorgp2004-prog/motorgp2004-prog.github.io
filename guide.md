@@ -21,11 +21,15 @@ robots: noindex
 layout: post
 title: "這裡寫標題"
 date: 2026-09-12 09:00:00 +0800
-categories: 生活
+categories: [生活]
+tags: [關鍵字1, 關鍵字2]
+excerpt: "一句話摘要，會顯示在首頁和搜尋結果。"
 ---
 
 這裡開始寫內文。
 ```
+
+寫完什麼都不用改，文章總覽、分類、標籤、搜尋都會自動出現。
 
 5. 按 `Commit changes`，等 1-2 分鐘去首頁看。
 6. 去 `Actions` 看：黃點是還在部署，綠勾才是好了，好了再去重整網站（`Ctrl+F5`）。
@@ -50,8 +54,18 @@ categories: 生活
 
 ## 放 PDF 下載
 
-1. 去 `assets/files/` 上傳 PDF（英文檔名，25MB 以內）
-2. 去 `downloads.md` 加一行：`[想顯示的名字](/assets/files/檔名.pdf)`
+1. 小檔（<25MB）：`assets/files/` 網頁上傳（英文檔名）
+2. 大檔（25-100MB）：本機 `git add` + `push`（AZBIL C7G 41.6MB 就是這樣加的）
+3. 去 `downloads.md` 加一行：`[想顯示的名字]({{ "/assets/files/檔名.pdf" | relative_url }})`
+4. 照片請放 `assets/images/`，不要放 `assets/files/`（小芸寫真已搬家）
+
+## 找文章機制（全自動）
+
+- `articles.md`：總覽＋年份＋全部列表
+- `categories.md`：分類索引，`categories: [研究]` 這樣寫才會被收錄
+- `tags.md`：標籤索引，`tags: [台新藥, ADC]` 這樣寫
+- `search.md` + `search.json`：站內搜尋（simple-jekyll-search，不用外掛），新文章自動進搜尋
+- 導覽列在 `_config.yml` 的 `header_pages`，已有搜尋、分類、標籤
 
 ## 看成品還是改東西？
 
