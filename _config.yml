@@ -3,7 +3,7 @@ email: you@example.com
 description: >-
   分享生活、學習與作品，手機也能更新的免費部落格。
 baseurl: ""
-url: ""
+url: "https://motorgp2004-prog.github.io"
 theme: minima
 plugins:
   - jekyll-feed
@@ -15,4 +15,4 @@ header_pages:
 minima:
   skin: auto
   social_links:
-    github: your-username
+    github: motorgp2004-prog
