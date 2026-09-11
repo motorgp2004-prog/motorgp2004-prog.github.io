@@ -2,6 +2,7 @@
 title: 文章分類
 date: 2026-09-11
 permalink: /categories/
+layout: page
 ---
 
 ## 分類索引
