@@ -13,6 +13,7 @@ show_excerpts: true
 permalink: /:year/:month/:day/:title/
 header_pages:
   - index.md
+  - articles.md
   - about.md
   - portfolio.md
   - downloads.md
