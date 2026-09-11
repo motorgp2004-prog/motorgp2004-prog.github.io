@@ -9,7 +9,7 @@ permalink: /portfolio/
 ## 作品 1：我的第一篇文章
 
 - 說明：這是範例，換成你自己的作品照片和介紹
-- 連結：[點我看文章](/2026/09/11/welcome/)
+- 連結：[點我看文章](https://motorgp2004-prog.github.io/2026/09/11/welcome/)
 
 ## 作品 2：還沒想到
 
