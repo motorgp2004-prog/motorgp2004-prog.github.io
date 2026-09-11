@@ -11,6 +11,7 @@ locale: zh_TW
 show_excerpts: true
 permalink: /:year/:month/:day/:title/
 header_pages:
+  - index.md
   - about.md
   - portfolio.md
 minima:
