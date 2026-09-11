@@ -9,6 +9,7 @@ plugins:
   - jekyll-feed
 locale: zh_TW
 show_excerpts: true
+permalink: /:year/:month/:day/:title/
 header_pages:
   - about.md
   - portfolio.md
