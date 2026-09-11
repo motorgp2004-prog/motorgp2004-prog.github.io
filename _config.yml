@@ -1,13 +1,15 @@
 title: 蝦米碗糕之家
 email: motorgp2004@icloud.com
+author: 蝦米碗糕站長
 description: >-
-  紀錄生活大小事。
+  蝦米碗糕之家：紀錄生活大小事、學習筆記與作品分享，用簡單文字留住每一天的成長。
 baseurl: ""
 url: "https://motorgp2004-prog.github.io"
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 locale: zh_TW
 show_excerpts: true
 permalink: /:year/:month/:day/:title/
@@ -21,3 +23,23 @@ minima:
   skin: auto
   social_links:
     github: motorgp2004-prog
+twitter:
+  username: motorgp2004-prog
+  card: summary
+logo: /favicon.ico
+# Giscus 留言設定：拿到真實 ID 前保持 enabled: false，拿到後改 true 並填 ID
+giscus:
+  enabled: false
+  repo: motorgp2004-prog/motorgp2004-prog.github.io
+  repo_id: YOUR_REPO_ID
+  category: Announcements
+  category_id: YOUR_CATEGORY_ID
+  mapping: pathname
+  lang: zh-TW
+# 預設每篇文章的 SEO 圖（等你做了 og-image.jpg 就有分享縮圖）
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      image: /assets/images/og-default.jpg

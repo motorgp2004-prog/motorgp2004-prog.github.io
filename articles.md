@@ -8,10 +8,10 @@ permalink: /articles/
 
 <ul>
 {% for post in site.posts %}
-  <li>{{ post.date | date: "%Y-%m-%d" }} — <a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li>{{ post.date | date: "%Y-%m-%d" }} — <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
 ## 下載區
 
-需要下載檔案請去 [下載區](https://motorgp2004-prog.github.io/downloads/)。
+需要下載檔案請去 [下載區]({{ "/downloads/" | relative_url }})。

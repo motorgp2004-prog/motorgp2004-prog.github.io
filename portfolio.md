@@ -8,17 +8,18 @@ permalink: /portfolio/
 
 ## 作品 1：我的第一篇文章
 
-- 說明：這是範例，換成你自己的作品照片和介紹
-- 連結：[點我看文章](https://motorgp2004-prog.github.io/2026/09/11/welcome/)
+- 說明：本站開張文，介紹這個部落格會寫什麼
+- 連結：[點我看文章]({{ "/2026/09/11/welcome/" | relative_url }})
 
-## 作品 2：還沒想到
+## 作品 2：圖文排版示範
 
-- 先留空，之後再慢慢補
+- 說明：示範文章裡怎麼放圖片，手機會自動縮放
+- 連結：[點我看範例]({{ "/2026/09/11/image-demo/" | relative_url }})
 
 ## 下載區
 
-需要下載檔案請去 [下載區](https://motorgp2004-prog.github.io/downloads/)。
+需要下載檔案請去 [下載區]({{ "/downloads/" | relative_url }})。
 
 ## 文章索引
 
-所有文章清單請看 [文章索引](https://motorgp2004-prog.github.io/articles/)。
+所有文章清單請看 [文章索引]({{ "/articles/" | relative_url }})。

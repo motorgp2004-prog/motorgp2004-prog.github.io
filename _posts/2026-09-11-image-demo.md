@@ -2,7 +2,10 @@
 layout: post
 title: "圖文範例：文字加圖片長這樣"
 date: 2026-09-11 12:00:00 +0800
-categories: 生活
+categories: 教學
+tags: [教學, 圖片, 排版]
+excerpt: "示範文章裡怎麼放圖片：上下各空一行，手機會自動縮放。"
+image: /assets/images/sample.svg
 ---
 
 這是一篇示範，教你文章裡怎麼放圖片。

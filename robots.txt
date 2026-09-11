@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /guide/
+Disallow: /admin/
+
+Sitemap: https://motorgp2004-prog.github.io/sitemap.xml

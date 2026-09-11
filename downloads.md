@@ -13,10 +13,10 @@ permalink: /downloads/
 
 ## 檔案列表
 
-- HONEYWELL DCP700 [下載 25083492.pdf](/assets/files/25083492.pdf)
+- HONEYWELL DCP700 溫控器手冊 [下載 honeywell-dcp700-manual.pdf]({{ "/assets/files/honeywell-dcp700-manual.pdf" | relative_url }})
 
 > 小提醒：網頁上傳單檔 25MB 以內，中文檔名容易壞連結，記得改英文。
 
 ## 文章索引
 
-所有文章清單請看 [文章索引](https://motorgp2004-prog.github.io/articles/)。
+所有文章清單請看 [文章索引]({{ "/articles/" | relative_url }})。

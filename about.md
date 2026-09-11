@@ -12,8 +12,8 @@ permalink: /about/
 
 ## 下載區
 
-需要下載檔案請去 [下載區](https://motorgp2004-prog.github.io/downloads/)。
+需要下載檔案請去 [下載區]({{ "/downloads/" | relative_url }})。
 
 ## 文章索引
 
-所有文章清單請看 [文章索引](https://motorgp2004-prog.github.io/articles/)。
+所有文章清單請看 [文章索引]({{ "/articles/" | relative_url }})。

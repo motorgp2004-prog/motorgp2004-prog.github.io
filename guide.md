@@ -2,6 +2,8 @@
 layout: page
 title: 站長手冊（不要分享給別人）
 permalink: /guide/
+sitemap: false
+robots: noindex
 ---
 
 這一頁是給站長自己看的維護教學，沒有放進導覽列，知道網址的人才進得來。請不要把這個網址貼給別人。
@@ -35,7 +37,7 @@ categories: 生活
 ## 改頁面
 
 - 關於我：`about.md`
-- 作品集：`portfolio.md`，文章連結請貼完整網址（例如 `https://motorgp2004-prog.github.io/2026/09/11/welcome/`），不要只貼 `/2026/...`，不然在倉庫裡點會 404
+- 作品集：`portfolio.md`，站內連結請用 `{{ "/2026/09/11/welcome/" | relative_url }}` 這種寫法（換網域不會壞）
 - 下載區：`downloads.md`
 - 改法：打開檔案按鉛筆 Edit，改完 `Commit changes`
 
@@ -67,3 +69,12 @@ categories: 生活
 
 - `/admin/`：寫文章的三種方法總覽
 - prose.io 目前不穩，先不要用，用 GitHub 網頁最穩
+
+## 留言功能（Giscus，2026-09-11 已開好一半）
+
+- Discussions 已經用 API 開好了（`has_discussions: true`）
+- 還剩 2 步你要手動做（GitHub App 要你本人按同意，我沒辦法代按）：
+  1. 到 `github.com/apps/giscus` 按 `Install`，只選 `motorgp2004-prog.github.io` 這個倉庫
+  2. 到 `giscus.app` 選語言 zh-TW、選 repo、選 `Announcements` 分類，把 `repo-id` 跟 `category-id` 貼到 `_config.yml` 的 `giscus:` 區，並把 `enabled: false` 改 `true`
+- 改完 commit，等 1-2 分鐘去任一篇文章底下看留言框
+- 程式面已 ready：`_layouts/post.html` 會自動載入 `_includes/comments.html`，沒填 ID 前不會輸出 script，不拖速度
